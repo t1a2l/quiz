@@ -1,0 +1,14 @@
+1.
+	The disadvantges are that the first function can finish after the second, because the function is fetching data and making async call,
+	therefore the second function can run with undefined as a parameter.
+
+	$("search").keyup(aysnc function(e){
+		var topFiveSuggestions = await fetchTopFiveSuggestions(e.target.val);
+		showAsAutoComplete(topFiveSuggestions);
+	});
+
+	
+
+2. function ShowMe($element, flag){
+		$element.is(":visible") == flag ? $element.show() : $element.hide();
+   }
